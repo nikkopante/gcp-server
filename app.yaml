@@ -8,7 +8,8 @@ resources:
   memory_gb: 0.5
   disk_size_gb: 10
 env_variables:
-  DB_HOST: /cloudsql/team16-2021:us-central1:people
-  DB_USERNAME: root
-  DB_PASSWORD: Passw0rd
-  DB_NAME: people
+#TO-DO: Replace the following variables based on your Cloud SQL configuration.
+  DB_HOST: INSERT_DATABASE_CONNECTION_NAME_HERE
+  DB_USERNAME: INSERT_DATABASE_USERNAME_HERE
+  DB_PASSWORD: INSERT_DATABASE_PASSWORD_HERE
+  DB_NAME: INSERT_DATABASE_NAME_HERE
