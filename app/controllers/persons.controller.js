@@ -77,50 +77,32 @@ exports.findOne = (req, res) => {
 exports.update = (req, res) => {
     const id = req.params.id;
 
-    Persons.update(req.body, {
-        where: { id: id }
-    })
-    .then(num => {
-        if (num == 1) {
-            res.send({
-                message: "Person was updated successfully."
-            });
-        } else {
-            res.send({
-                message: `Cannot update Person with id=${id}. Maybe Person was not found or req.body is empty!`
-            });
-        }
-    })
-    .catch(err => {
-        res.status(500).send({
-            message: "Error updating Person with id=" + id
-        });
-    });
+    //TO-DO: Add code to update a person based on the ID of the user.
+    //The ID is at the variable named `id` at Line 78.
+    //After the update is run, return a JSON object with a `message` field to the client.
+    //Example: { message: 'Insert message here.' }
+    //You may refer to the following link for reference.
+    //https://sequelize.org/master/manual/model-querying-basics.html#simple-update-queries
+
+    //Insert code below.
+
+    //End of function
 };
 
 // Delete a Person with the specified id in the request
 exports.delete = (req, res) => {
     const id = req.params.id;
 
-    Persons.destroy({
-        where: { id: id }
-    })
-    .then(num => {
-        if (num == 1) {
-            res.send({
-                message: "Person was deleted successfully!"
-            });
-        } else {
-            res.send({
-                message: `Cannot delete Person with id=${id}. Maybe Person was not found!`
-            });
-        }
-    })
-    .catch(err => {
-        res.status(500).send({
-            message: "Could not delete Person with id=" + id
-        });
-    });
+    //TO-DO: Add code to delete a person based on the ID of the user.
+    //The ID is at the variable named `id` at Line 94.
+    //After the delete is run, return a JSON object with a `message` field to the client.
+    //Example: { message: 'Insert message here.' }
+    //You may refer to the following link for reference.
+    //https://sequelize.org/master/manual/model-querying-basics.html#simple-delete-queries
+
+    //Insert code below.
+
+    //End of function
 };
 
 // Delete all Persons from the database.
