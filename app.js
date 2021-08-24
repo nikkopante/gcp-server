@@ -7,7 +7,8 @@ const app = express();
 var corsOptions = {
   origin: [
     "http://localhost:8081",
-    "https://hackathon-web-dot-team16-2021.et.r.appspot.com"
+    //TO-DO: Replace the contents of the string below with the frontend IP address.
+    "INSERT_FRONTEND_URL_HERE"
   ]
 };
 
